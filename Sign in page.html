@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/Sign%20in%20page.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: linear-gradient(0deg, rgb(91, 230, 158), rgb(23, 129, 243));
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .navbar {
+            height: 30px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            /*   background-color: rgb(200, 223, 27);   */
+            align-items: center;
+        }
+        
+        .navlinks {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-family: cursive;
+        }
+        
+        .navlinks a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-family: cursive;
+        }
+        
+        .nav {
+            width: 70px;
+            height: 40px;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .nav a {
+            font-size: 10px;
+            color: black;
+        }
+        
+        .sign {
+            width: 70px;
+            height: 40px;
+            background-color: rgb(255, 0, 136);
+            border-radius: 10px;
+            color: rgb(213, 245, 6);
+            font-family: cursive;
+        }
+        
+        .login {
+            width: 70px;
+            height: 40px;
+            background-color: rgb(245, 10, 135);
+            border-radius: 10px;
+            color: rgb(225, 245, 6);
+            font-family: cursive;
+        }
+        
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            gap: 20%;
+        }
+        
+        .form {
+            width: 100%;
+            font-size: 20px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        
+        .piyush {
+            width: 20%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .chauhan {
+            width: 20%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="http:">
+            <img src="./Sign in page_files/417405844_770630501771520_574263134459742277_n_3726421527.jpg" alt="" style="width: 70px; height: 60px;">
+        </a>
+        <ul class="navlinks">
+            <li>
+                <a href="http://127.0.0.1:5500/index12.html">
+                    </a><button class="sign"><a href="http://127.0.0.1:5500/index12.html">Home
+                </a><a href="http://127.0.0.1:5500/index12.html"></a>
+
+            </button></li>
+           
+
+
+
+        </ul>
+        <div class="btn">
+             <li><a href="http://127.0.0.1:5500/loginpage.html"> login</a></li>
+
+            <button class="sign">Sign in
+                <a href="http://127.0.0.1:5500/index12.html"></a>
+            </button>
+                    <button class="login">login
+              <a href="http://127.0.0.1:5500/loginpage.html"></a>
+             </button>
+                    </div>
+
+    </nav>
+    <div class="container">
+
+        <div class="form">
+
+            <form>
+                <h1>Sign-In</h1>
+                <br>
+                <label for="">Enter your first name</label>
+                <br>
+                <input type="text" id="fname">
+                <br>
+                <label for="">last name</label>
+                <br>
+                <input type="text" id="lname">
+                <br>
+                <label for=""> Email id</label>
+                <br>
+                <input type="email" name="@gmail" id="email">
+                <br>
+                <label for="">Password</label>
+                <br>
+                <input type="text" name="name" id="pass">
+                <br>
+                <br>
+                <input type="submit" value="submit" id="submit">
+
+                <input type="checkbox" name="" id="">
+                <br>
+                <label for="">Date &amp; time</label>
+                <br>
+                <input type="date" name="">
+
+
+            </form>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="piyush">
+            <h1>DEMON SLAYER</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic rerum repellat veritatis corporis inventore, molestias itaque deserunt voluptas, odio fuga deleniti. Quis dignissimos voluptatum fuga in illum neque nostrum!</p>
+
+        </div>
+        <div class="chauhan">
+            <img src="./Sign in page_files/anime-style-mythical-dragon-creature_23-2151112866.jpg" alt="" style="width: 400px; height: 500px;">
+        </div>
+
+    </div>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/contect.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contect page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: linear-gradient(45deg, purple);
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .navbar {
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            /*  background-color: rgb(159, 171, 96); */
+            align-items: center;
+            font-family: cursive;
+        }
+        
+        .navlinks {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .navlinks a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 15px;
+        }
+        
+        .nav {
+            width: 70px;
+            height: 40px;
+            background-color: chartreuse;
+            border-radius: 10px;
+            color: rgb(34, 6, 243);
+            font-family: cursive;
+        }
+        
+        .login {
+            width: 70px;
+            height: 40px;
+            background-color: chartreuse;
+            border-radius: 10px;
+            color: rgb(46, 6, 245);
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="./contect page_files/417405844_770630501771520_574263134459742277_n_3726421527.jpg" alt="" style="width: 70px; height: 60px;">
+        </a>
+        <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="white background.html">Contact</a></li>
+            <li><a href="Swami vivekanand.html">About Us</a></li>
+            <li><a href="About Newton.html">Services</a></li>
+
+
+        </ul>
+        <div class="btn">
+            <button class="nav"><a href="Sign in page.html">Sign up</a></button>
+            <button class="login"><a href="Login page.html">Log in</a></button>
+
+        </div>
+
+
+
+    </nav>
+    <h1 style="color: aquamarine;">Interoduction of Sent Andrew College </h1>
+    <p style="color: chartreuse;">There are several institutions named St. Andrew's College; one is St. Andrew's College of Arts, Science and Commerce in Bandra, Mumbai, founded by the Catholic Archdiocese of Bombay in 1983, as seen on the college website. Another is St. Andrew's
+        College Gorakhpur, founded by the Church Missionary Society in 1828 as a school that became a degree college in 1899, according to its official website. A third is St. Andrews Institute of Technology &amp; Management (SAITM) in Gurgaon, which
+        is affiliated with Maharshi Dayanand University (MDU), says Shiksha. </p>
+    <img src="./contect page_files/unnamed.webp" alt="" style="width: 100%; height: 40%;">
+
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+
+</body>
+
+</html>

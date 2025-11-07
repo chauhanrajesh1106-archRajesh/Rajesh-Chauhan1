@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/butstap.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #9f5656;
+        }
+        
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            background-color: #f4a5df;
+        }
+        
+        .about-text {
+            flex: 1 1 45%;
+            max-width: 500px;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .about-video {
+            flex: 1 1 45%;
+            text-align: center;
+        }
+        
+        .about-video video {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgb(3, 246, 209);
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 900px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 5%;
+            }
+            .about-text,
+            .about-video {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+            .about-text h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="about-section" id="About">
+        <div class="about-text">
+            <h2 style="color: #d9f507;">About Me</h2>
+            <p>
+                Hi! I’m Alex, a passionate web developer and designer who loves creating beautiful, responsive, and interactive websites. I specialize in front-end development, and I’m always learning new technologies to make digital experiences more engaging.
+            </p>
+        </div>
+
+        <div class="about-video">
+            <video src="your-video.mp4" autoplay="" muted="" loop="" playsinline=""></video>
+        </div>
+        <img src="./About Me_files/mythical-dragon-beast-anime-style_23-2151112802.jpg" alt="">
+    </section>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

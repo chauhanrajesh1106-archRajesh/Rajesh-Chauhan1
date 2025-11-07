@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index9.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Newton</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 200%;
+            height: 200vh;
+            background-color: antiquewhite;
+            display: flex;
+        }
+        
+        .firstdiv {
+            width: 35%;
+            height: 50%;
+            background-color: aliceblue;
+            border: 4px solid black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .seconddiv {
+            width: 35%;
+            height: 50%;
+            background-color: aliceblue;
+            border: 4px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="firstdiv">
+            <h1>Short Interoductionof Newton</h1>
+            <p>Sir Isaac Newton was an English physicist, mathematician, and astronomer who was a pivotal figure in the Scientific Revolution. He is most famous for his laws of motion, the law of universal gravitation, and co-inventing calculus. </p>
+            <p> Newton's work established the foundation for classical mechanics and his discoveries in optics, such as the decomposition of white light into a spectrum of colors, also made him one of the most influential scientists in history. </p>
+            <img src="./About Newton_files/240_F_271504522_PDyJDEyJhse3qHlQc6RIxaem1Gd0jAFy.jpg" alt="" style="width: 500px; height: 300px;">
+            <img src="./About Newton_files/1000_F_825940129_m9xWOWF9P1ZZqTytRSCIFK6ceZcnvCYA.jpg" alt="" style="width: 500px; height: 280px;">
+
+            <p>Key contributions Physics: He formulated the three laws of motion, which describe the relationship between an object and the forces acting upon it. He also developed the theory of universal gravitation, explaining that the same force that
+                causes an apple to fall to the ground also keeps the planets in orbit around the sun. Mathematics: Newton developed calculus independently of Gottfried Leibniz, providing a powerful new tool for understanding change and motion. </p>
+
+        </div>
+        <div class="seconddiv">
+            <h1>Interoduction of Albert Einstein</h1>
+            <p>Albert Einstein was a German-born physicist born in 1879, most famous for developing the theory of relativity and the equation \(E=mc^{2}\). He won the 1921 Nobel Prize in Physics for his work on the photoelectric effect, and his theories
+                laid the foundation for modern physics. After moving to the United States in the 1930s, he became a strong advocate for peace and civil rights. &nbsp;</p>
+            <img src="./About Newton_files/ai-generated-7820006_1280.jpg" alt="" style="width: 500px; height: 500px;">
+
+            <p>Scientific contributions: Einstein's most significant contributions include the special and general theories of relativity and his explanation of the photoelectric effect. The mass-energy equivalence formula, \(E=mc^{2}\), is one of the most
+                famous equations in the world.&nbsp; </p>
+
+        </div>
+
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
