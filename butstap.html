@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #9f5656;
+        }
+        
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            background-color: #f4a5df;
+        }
+        
+        .about-text {
+            flex: 1 1 45%;
+            max-width: 500px;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .about-video {
+            flex: 1 1 45%;
+            text-align: center;
+        }
+        
+        .about-video video {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgb(3, 246, 209);
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 900px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 5%;
+            }
+            .about-text,
+            .about-video {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+            .about-text h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="about-section" id="About">
+        <div class="about-text">
+            <h2 style="color: #d9f507;">About Me</h2>
+            <p>
+                Hi! I’m Alex, a passionate web developer and designer who loves creating beautiful, responsive, and interactive websites. I specialize in front-end development, and I’m always learning new technologies to make digital experiences more engaging.
+            </p>
+        </div>
+
+        <div class="about-video">
+            <video src="your-video.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <img src=" https://img.freepik.com/free-photo/mythical-dragon-beast-anime-style_23-2151112802.jpg?ga=GA1.1.162364989.1762402548&semt=ais_hybrid&w=740&q=80" alt="">
+    </section>
+
+</body>
+
+</html>

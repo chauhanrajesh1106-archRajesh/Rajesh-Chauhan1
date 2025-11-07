@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgb(100, 100, 300));
+        }
+        
+        .navbar {
+            height: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            /*  background-color: rgb(27, 223, 217);  */
+            align-items: center;
+        }
+        
+        .navlinks {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-family: cursive;
+        }
+        
+        .navlinks a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-family: cursive;
+        }
+        
+        .nav {
+            width: 70px;
+            height: 40px;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .sign {
+            width: 70px;
+            height: 40px;
+            background-color: chartreuse;
+            border-radius: 10px;
+            color: rgb(46, 6, 245);
+            font-family: cursive;
+        }
+        
+        .login {
+            width: 70px;
+            height: 40px;
+            background-color: chartreuse;
+            border-radius: 10px;
+            color: rgb(46, 6, 245);
+            font-family: cursive;
+        }
+        
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .leftside {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 40px;
+            width: 50%;
+        }
+        
+        .headingtext {
+            font-family: cursive;
+            font-weight: 700;
+            font-size: 30px;
+            color: yellow;
+            text-align: right;
+        }
+        
+        .headingpara {
+            color: rgb(6, 211, 143);
+            text-align: justify;
+        }
+        
+        .rightside {
+            text-align: center;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            color: #f7eb06;
+            line-height: 1.6;
+        }
+        
+        .about-video {
+            flex: 1 1 45%;
+            text-align: center;
+        }
+        
+        .about-video video {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px #05e9f9f2;
+            color: rgb(13, 192, 208);
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 900px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 5%;
+                color: #f7eb06;
+            }
+            .about-text,
+            .about-video {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+            .about-text h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="http://">
+            <img src="https://colleges18.s3.ap-south-1.amazonaws.com/417405844_770630501771520_574263134459742277_n_3726421527.jpg" alt="" style="width: 70px; height: 60px;" alt="" style="width: 60px; height: 60px; border-radius: 5px;">
+        </a>
+        <ul class="navlinks">
+            <li>
+                <a href="Sign in page.html">
+                    <div class="btn">
+                        <button class="sign"> Sign in</button>
+                        <button class="login">login <a href="loginpage.html"></a></button>
+                </a>
+
+                </div>
+
+
+            </li>
+
+
+
+        </ul>
+
+
+    </nav>
+    <div class="container">
+
+        <div class="leftside">
+            <div class="headingtext">
+                <h1>Hello World</h1>
+
+
+
+            </div>
+            <div class="headingpara">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere modi facilis placeat. Quas doloribus sint blanditiis atque esse amet, est magni animi et facere quos qui voluptatum similique saepe.</p>
+
+
+            </div>
+
+
+        </div>
+        <div class="rightside">
+            <img src=" https://img.freepik.com/free-photo/literary-fantasy-character_23-2151863454.jpg?ga=GA1.1.162364989.1762402548&semt=ais_hybrid&w=740&q=80" alt="" style="width: 333px; height: 350px;">
+
+
+
+
+        </div>
+    </div>
+
+    <section class="about-section" id="About">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                Hi! I’m Alex, a passionate web developer and designer who loves creating beautiful, responsive, and interactive websites. I specialize in front-end development, and I’m always learning new technologies to make digital experiences more engaging.
+            </p>
+        </div>
+
+        <div class="about-video">
+            <video src="your-video.mp4" autoplay muted loop playsinline></video>
+        </div>
+    </section>
+</body>
+
+</html>

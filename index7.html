@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Class 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 200%;
+            height: 200vh;
+            background-color: aqua;
+            border: 5px solid black;
+            display: flex;
+        }
+        
+        .firstdiv {
+            width: 30%;
+            height: 60vh;
+            background-color: rgb(38, 32, 32);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .seconddiv {
+            text-align: center;
+            width: 30%;
+            height: 60vh;
+            background-color: rgb(44, 40, 42);
+        }
+        
+        .thirddiv {
+            width: 30%;
+            height: 60vh;
+            background-color: rgb(32, 30, 30);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="firstdiv">
+            <h1 style="font-style: italic;
+            color: rgb(255, 0, 191);">Interoduction Of Newton</h1>
+            <p style="font-style: oblique;  color: rgb(195, 195, 8);">Sir Isaac Newton was an English physicist, mathematician, and astronomer who was a pivotal figure in the Scientific Revolution. He is most famous for his laws of motion, the law of universal gravitation, and co-inventing calculus. Newton's
+                work established the foundation for classical mechanics and his discoveries in optics, such as the decomposition of white light into a spectrum of colors, also made him one of the most influential scientists in history.
+            </p>
+            <p style="font-style: oblique;  color: rgb(195, 170, 8);">Life and legacy Birth and death: He was born on December 25, 1642 (or January 4, 1643, according to the Gregorian calendar), and died on March 31, 1727. Education and career: Newton attended and later became a Fellow of Trinity College at
+                Cambridge University. He served as a member of Parliament and was the president of the Royal Society. Influence: His work in Philosophiæ Naturalis Principia Mathematica ("Mathematical Principles of Natural Philosophy") dominated physics
+                for centuries and was only modified by Albert Einstein's theory of relativity. He was knighted in 1705 for his contributions. </p>
+            <p style="font-style: oblique; color: rgb(192, 195, 8);">Physics: He formulated the three laws of motion, which describe the relationship between an object and the forces acting upon it. He also developed the theory of universal gravitation, explaining that the same force that causes an apple to
+                fall to the ground also keeps the planets in orbit around the sun. Mathematics: Newton developed ca
+            </p>
+
+        </div>
+
+        <div class="seconddiv">
+            <h1 style="font-style: italic; color: chartreuse;">image of newton</h1>
+            <img src="data:image/jpeg;base64,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"
+                alt="" style="width: 350px; height: 400px;">
+
+
+        </div>
+        <div class="thirddiv">
+            <h1 style="font-style: italic; color: blue;"> Interoduction Of Galilio</h1>
+            <p style="color: darkkhaki; font-style: oblique;">Galileo Galilei was an Italian astronomer, physicist, and engineer born in 1564 who played a major role in the scientific revolution. He is known for his improvements to the telescope and subsequent astronomical observations, his experimental
+                work on motion, and his support for the heliocentric model of the solar system. Due to his views, he famously clashed with the Catholic Church, leading to his trial for heresy and life of house arrest. </p>
+            <img src="https://t3.ftcdn.net/jpg/05/66/86/22/360_F_566862276_z1ZbtbpwsdpU79zPpF4aoOYIR2Tzu1Ph.webp" alt="" style="width: 300px; height: 260px;">
+
+        </div>
+    </div>
+</body>
+
+
+</html>

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in page</title>
+    <title>Login page</title>
     <style>
-        * {
+            * {
             margin: 0;
             padding: 0;
         }
@@ -18,11 +18,11 @@
         }
         
         .navbar {
-            height: 30px;
+            height: 20px;
             padding: 20px;
             display: flex;
             justify-content: space-between;
-            /*   background-color: rgb(200, 223, 27);   */
+            /*  background-color: rgb(27, 223, 217);  */
             align-items: center;
         }
         
@@ -35,16 +35,15 @@
         
         .navlinks a {
             text-decoration: none;
-            color: black;
+            color: rgb(216, 239, 9);
             font-size: 15px;
             font-family: cursive;
         }
-        
-        .nav {
+        /*  .nav {
             width: 70px;
             height: 40px;
-            border-bottom-left-radius: 5px;
-        }
+               border-bottom-left-radius: 5px;  
+        }  */
         
         .nav a {
             font-size: 10px;
@@ -71,38 +70,79 @@
         
         .container {
             display: flex;
-            width: 100%;
+            width: 50%;
             height: 100vh;
             align-items: center;
             justify-content: center;
-            gap: 20%;
+            border: none;
         }
         
         .form {
             width: 100%;
             font-size: 20px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             margin: 10px;
             padding: 20px;
             border-radius: 12px;
+            text-align: center;
+            border: 1px solid black;
         }
         
-        .piyush {
-            width: 20%;
-            height: 60vh;
+        .about-section {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            background-color: #fff;
+        }
+        
+        .about-text {
+            flex: 1 1 45%;
+            max-width: 500px;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .about-video {
+            flex: 1 1 45%;
             text-align: center;
         }
         
-        .chauhan {
-            width: 20%;
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+        .about-video video {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
+        /* Responsive Design */
+        
+        @media (max-width: 900px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 5%;
+            }
+            .about-text,
+            .about-video {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+            .about-text h2 {
+                font-size: 2rem;
+            }
     </style>
+
 </head>
 
 <body>
@@ -117,20 +157,13 @@
                 <a href=" index12.html"></a>
 
             </a></li>
-           
+
 
 
 
         </ul>
         <div class="btn">
-             <li><a href="loginpage.html"> login</a></li>
-
-            <button class="sign">Sign in
-                <a href=" index12.html"></a>
-            </button>
-                    <button class="login">login
-              <a href="loginpage.html"></a>
-             </button>
+             <button class="login">login</button>
                     </div>
 
     </nav>
@@ -139,55 +172,38 @@
         <div class="form">
 
             <form>
-                <h1>Sign-In</h1>
+                <h1>Login</h1>
                 <br>
-                <label for="">Enter your first name</label>
+                <label for="">Enter your Password</label>
                 <br>
                 <input type="text" id="fname">
                 <br>
-                <label for="">last name</label>
+                <label for="">Confirm Password </label>
                 <br>
                 <input type="text" id="lname">
-                <br>
-                <label for=""> Email id</label>
-                <br>
-                <input type="email" name="@gmail" id="email">
-                <br>
-                <label for="">Password</label>
-                <br>
-                <input type="text" name="name" id="pass">
-                <br>
                 <br>
                 <input type="submit" value="submit" id="submit">
 
                 <input type="checkbox" name="" id="">
                 <br>
-                <label for="">Date & time</label>
-                <br>
-                <input type="date" name="">
 
 
             </form>
-
-
-
-
-
-
-
-
-
-        </div>
-        <div class="piyush">
-            <h1>DEMON SLAYER</h1>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic rerum repellat veritatis corporis inventore, molestias itaque deserunt voluptas, odio fuga deleniti. Quis dignissimos voluptatum fuga in illum neque nostrum!</P>
-
-        </div>
-        <div class="chauhan">
-            <img src="https://img.freepik.com/free-photo/anime-style-mythical-dragon-creature_23-2151112866.jpg?ga=GA1.1.162364989.1762402548&semt=ais_hybrid&w=740&q=80" alt="" style="width: 400px; height: 500px;">
         </div>
 
     </div>
+    <section class="about-section" id="About">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                Hi! I’m Alex, a passionate web developer and designer who loves creating beautiful, responsive, and interactive websites. I specialize in front-end development, and I’m always learning new technologies to make digital experiences more engaging.
+            </p>
+        </div>
+
+        <div class="about-video">
+            <video src="your-video.mp4" autoplay muted loop playsinline></video>
+        </div>
+    </section>
 
 
 </body>
